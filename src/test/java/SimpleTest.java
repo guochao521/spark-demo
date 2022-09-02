@@ -1,0 +1,32 @@
+import com.google.gson.Gson;
+
+import org.mortbay.util.ajax.JSON;
+
+import java.util.ArrayList;
+
+public class SimpleTest {
+    public static void main(String[] args) {
+
+        Gson gson = new Gson();
+        String json = "{ \"reviews\": \"0.0\", \"score\": \"0.0\", \"weekday\": \"6.0\", \"hour\": \"23.0\", \"connectiontype\": \"2.0\", \"ad_id\": \"15901.0\", \"install_list_size\": \"23.0\", \"country_index\": \"0.0\", \"city_index\": \"0.0\", \"model_index\": \"15.0\", \"os_index\": \"0.0\", \"osv_index\": \"0.0\", \"language_index\": \"0.0\", \"bundle_index\": \"0.0\", \"tagid_index\": \"0.0\", \"adx_index\": \"0.0\", \"pkg_name_index\": \"5.0\", \"category_index\": \"0.0\", \"pkg_size_index\": \"0.0\", \"installs_index\": \"0.0\", \"content_rating_index\": \"0.0\", \"user_id_index\": \"4551.0\", \"install_list\": \"com.samsung.android.game.gamehome com.neowiz.games.poker com.neowiz.games.newmatgo com.dkzkcmzl.dolsingTalk com.ivancity.android blockpuzzle.new1010.jewelgames.puzzlegames com.mrgames.kimguramatgogooglefree com.skt.logii.widget com.kt.android.showtouch com.somansa.factory_kyh kr.co.namanapp.leasehouse com.wordpuzzle.kr com.sec.android.daemonapp com.skmc.okcashbag.home_google com.shs.mrtrotjjang kr.co.happymobile.happyscreen com.skplanet.ocb.locker com.readercompany.pdf.reader com.surpax.ledflashlight.panel teamdoppelganger.smarterbus com.skt.skaf.OA00026910 teamDoppelGanger.SmarterSubway com.ibk.android.ionebank\", \"bid_time\": \"1593818079000\", \"bundle_day1_imps\": \"12.0\", \"bundle_day3_imps\": \"13.0\", \"bundle_day7_imps\": \"13.0\", \"bundle_day1_clicks\": \"6.0\", \"bundle_day3_clicks\": \"6.0\", \"bundle_day7_clicks\": \"6.0\", \"bundle_day1_convs\": \"3.0\", \"bundle_day3_convs\": \"3.0\", \"bundle_day7_convs\": \"3.0\", \"ad_day1_imps\": \"11.0\", \"ad_day3_imps\": \"12.0\", \"ad_day7_imps\": \"12.0\", \"ad_day1_clicks\": \"4.0\", \"ad_day3_clicks\": \"5.0\", \"ad_day7_clicks\": \"5.0\", \"ad_day1_convs\": \"3.0\", \"ad_day3_convs\": \"3.0\", \"ad_day7_convs\": \"3.0\", \"all_day3_imps\": \"6.0\", \"all_day7_imps\": \"7.0\", \"all_day14_imps\": \"7.0\", \"all_day3_clicks\": \"4.0\", \"all_day7_clicks\": \"5.0\", \"all_day14_clicks\": \"6.0\", \"all_day3_convs\": \"0.0\", \"all_day7_convs\": \"0.0\", \"all_day14_convs\": \"0.0\", \"dsp_day1_imps\": \"4.0\", \"dsp_day3_imps\": \"5.0\", \"dsp_day10_imps\": \"6.0\", \"dsp_day15_imps\": \"7.0\", \"dsp_day1_clicks\": \"0.0\", \"dsp_day3_clicks\": \"0.0\", \"dsp_day10_clicks\": \"0.0\", \"dsp_day15_clicks\": \"0.0\", \"dsp_day1_convs\": \"0.0\", \"dsp_day3_convs\": \"0.0\", \"dsp_day10_convs\": \"0.0\", \"dsp_day15_convs\": \"0.0\", \"bundle_day1_ctr\": \"1.0\", \"bundle_day3_ctr\": \"1.0\", \"bundle_day7_ctr\": \"1.0\", \"bundle_day1_convs_ctr_1\": \"1.0\", \"bundle_day3_convs_ctr_1\": \"1.0\", \"bundle_day7_convs_ctr_1\": \"1.0\", \"bundle_day1_convs_ctr_2\": \"6.0\", \"bundle_day3_convs_ctr_2\": \"8.0\", \"bundle_day7_convs_ctr_2\": \"8.0\", \"ad_day1_ctr\": \"1.0\", \"ad_day3_ctr\": \"1.0\", \"ad_day7_ctr\": \"1.0\", \"ad_day1_convs_ctr_1\": \"1.0\", \"ad_day3_convs_ctr_1\": \"1.0\", \"ad_day7_convs_ctr_1\": \"1.0\", \"ad_day1_convs_ctr_2\": \"14.0\", \"ad_day3_convs_ctr_2\": \"14.0\", \"ad_day7_convs_ctr_2\": \"14.0\", \"all_day3_ctr\": \"23.0\", \"all_day7_ctr\": \"21.0\", \"all_day14_ctr\": \"25.0\", \"all_day3_convs_ctr_1\": \"0.0\", \"all_day7_convs_ctr_1\": \"0.0\", \"all_day14_convs_ctr_1\": \"0.0\", \"all_day3_convs_ctr_2\": \"0.0\", \"all_day7_convs_ctr_2\": \"0.0\", \"all_day14_convs_ctr_2\": \"0.0\", \"dsp_day1_ctr\": \"0.0\", \"dsp_day3_ctr\": \"0.0\", \"dsp_day10_ctr\": \"0.0\", \"dsp_day15_ctr\": \"0.0\", \"dsp_day1_convs_ctr_1\": \"0.0\", \"dsp_day3_convs_ctr_1\": \"0.0\", \"dsp_day10_convs_ctr_1\": \"0.0\", \"dsp_day15_convs_ctr_1\": \"0.0\", \"dsp_day1_convs_ctr_2\": \"0.0\", \"dsp_day3_convs_ctr_2\": \"0.0\", \"dsp_day10_convs_ctr_2\": \"0.0\", \"dsp_day15_convs_ctr_2\": \"0.0\", \"weight\": \"1\", \"features1\": \"12.0=5.0\", \"features2\": \"6.0=0.0\", \"features3\": \"6.0=0.0\", \"features4\": \"1.0=23.0\", \"features5\": \"1.0=0.0\", \"features6\": \"1.0=0.0\", \"features7\": \"1.0=0.0\", \"features8\": \"1.0=2.0\", \"features9\": \"13.0=6.0\", \"features10\": \"13.0=0.0\", \"features11\": \"13.0=5.0\", \"features12\": \"13.0=0.0\", \"features13\": \"13.0=0.0\", \"features14\": \"13.0=6.0\", \"features15\": \"1.0=0.0\", \"features16\": \"1.0=0.0\", \"features17\": \"1.0=0.0\", \"features18\": \"1.0=2.0\", \"features19\": \"1.0=5.0\", \"features20\": \"1.0=0.0\", \"features21\": \"1.0=0.0\", \"features22\": \"1.0=6.0\", \"features23\": \"1.0=23.0\", \"features24\": \"5.0=0.0\", \"features25\": \"5.0=0.0\", \"features26\": \"5.0=0.0\", \"features27\": \"5.0=0.0\", \"features28\": \"1.0=0.0\", \"features29\": \"5.0=0.0\", \"features30\": \"12.0=5.0\", \"features31\": \"5.0=0.0\", \"features32\": \"12.0=4.0\", \"features33\": \"5.0=0.0\", \"features34\": \"5.0=4.0\", \"features35\": \"15901.0=0.0\", \"features36\": \"0.0=0.0\", \"features37\": \"6.0=0.0\", \"features38\": \"23.0=0.0\", \"features39\": \"23.0=0.0\", \"features40\": \"23.0=0.0\", \"features41\": \"23.0=2.0\", \"features42\": \"0.0=15.0\", \"features43\": \"0.0=0.0\", \"features44\": \"0.0=0.0\", \"features45\": \"0.0=0.0\", \"features46\": \"0.0=2.0\", \"features47\": \"0.0=0.0\", \"features48\": \"0.0=23.0\", \"features49\": \"15.0=0.0\", \"features50\": \"15.0=2.0\"}";
+        Gson bean = gson.fromJson(json, Gson.class);
+        String jsonstr = gson.toJson(bean);
+        System.out.println(jsonstr);
+//        System.out.println(bean.data.get(0).username);
+//        String json2 = gson.toJson(bean);
+//        System.out.println("Json字符串 = " + json2);
+        //******************************************************************************************
+//        ArrayList<Person> list_person = new ArrayList<Person>();
+//        list_person.add(new Person("好友1", "广州"));
+//        list_person.add(new Person("好友2", "深圳"));
+//
+//        ArrayList<GsonBean.Account> list_account = new ArrayList<GsonBean.Account>();
+//        list_account.add(new GsonBean().new Account("包青天", list_person));//外部类GsonBean要有一个无参的构造方法，不然怎么创建内部类对象？
+//        list_account.add(new GsonBean().new Account("bqt", new ArrayList<Person>()));//可以是空的集合，或者直接是空对象null
+//
+//        GsonBean bean2 = new GsonBean(2, list_account);
+//        String json3 = gson.toJson(bean2);
+//        System.out.println("Json字符串 = " + json3);
+
+    }
+}

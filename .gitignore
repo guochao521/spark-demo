@@ -1,6 +1,12 @@
 goodrich-znzj-server.iml
-.idea
+.idea/
 logs
 target/
 tmp/
 person/
+
+### IntelliJ IDEA ###
+.idea/**
+*.iws
+*.iml
+*.ipr

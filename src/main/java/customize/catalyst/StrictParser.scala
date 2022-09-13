@@ -19,6 +19,8 @@ class StrictParser(parser: ParserInterface) extends ParserInterface {
   override def parsePlan(sqlText: String): LogicalPlan = {
     val logicalPlan: LogicalPlan = parser.parsePlan(sqlText)
     logicalPlan transform {
+      // 这个 @ 的主要功能是在模式匹配中，匹配到一个模式后，但是在处理过程中，使用对象本身而不是匹配后的元素。
+      // @ 模式匹配，加上 @ 匹配的是 Project(projectList, _)
       case project @ Project(projectList, _) =>
         projectList.foreach {
           name =>

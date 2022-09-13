@@ -1,8 +1,6 @@
 package geektime.sql
 
-import org.apache.spark.sql.{Encoder, Encoders, SparkSession, functions}
-import org.apache.spark.sql.expressions.Aggregator
-import org.apache.spark.sql.functions.udf
+import org.apache.spark.sql.SparkSession
 object SQLSFunction {
   def main(args: Array[String]): Unit = {
     val basePath = "./src/main/resources/"
@@ -21,7 +19,7 @@ object SQLSFunction {
     df_json.createOrReplaceTempView("people")
     spark.sql("SELECT * FROM people where age > 20").show()
 
-    import  spark.implicits._
+    import spark.implicits._
     val df = Seq(
       ("alex", "shanghai"),
       ("Andy", "beijing" )).toDF("name", "city")

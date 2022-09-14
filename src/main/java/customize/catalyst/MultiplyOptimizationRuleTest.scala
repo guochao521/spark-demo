@@ -6,7 +6,7 @@ import org.apache.spark.sql.{SparkSession, SparkSessionExtensions}
  * @author wangguochao
  * @date 2022/9/13
  */
-object SqlCatalystTest {
+object MultiplyOptimizationRuleTest {
 
   def main(args: Array[String]): Unit = {
     /**

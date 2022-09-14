@@ -10,7 +10,7 @@ import org.apache.spark.sql.SparkSession
 /**
  * 链接： https://www.modb.pro/db/444775
  */
-object TypePriority {
+object CastTypeOptimizationTest {
 
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder

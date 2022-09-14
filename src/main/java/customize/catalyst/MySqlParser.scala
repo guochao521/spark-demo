@@ -45,5 +45,7 @@ class MySqlParser(sparkSession: SparkSession, val delegate : org.apache.spark.sq
     delegate.parseDataType(sqlText)
   }
 
-  override def parseMultipartIdentifier(sqlText: String): Seq[String] = ???
+  override def parseMultipartIdentifier(sqlText: String): Seq[String] = {
+    delegate.parseMultipartIdentifier(sqlText)
+  }
 }

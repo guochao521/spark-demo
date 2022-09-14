@@ -6,7 +6,7 @@ import org.apache.spark.sql.{SparkSession, SparkSessionExtensions}
  * @author wangguochao
  * @date 2022/9/14
  */
-object ExtensionTest {
+object MySparkSessionExtensionTest {
   def main(args: Array[String]): Unit = {
     val sparkSession = SparkSession.builder()
       .appName("Spark SQL basic example")

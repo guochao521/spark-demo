@@ -72,15 +72,4 @@ class StrictParser(parser: ParserInterface) extends ParserInterface {
    * @return
    */
   override def parseDataType(sqlText: String): DataType = parser.parseDataType(sqlText)
-
-//  // 创建扩展点函数
-//  /**
-//   * 这里面有两个函数，extensionBuilder函数用于 SparkSession构建，
-//   */
-//  type ParseBuilder = (SparkSession, ParserInterface) => ParserInterface
-//  type ExtensionBuilder = SparkSessionExtensions => Unit
-//  val parseBuilder: ParseBuilder = (_, parser) => new StrictParser(parser)
-//  val extensionBuilder: ExtensionBuilder = {
-//    e => e.injectParser(parseBuilder)
-//  }
 }

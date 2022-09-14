@@ -22,6 +22,7 @@ object StrictParserTest {
       e => e.injectParser(parseBuilder)
     }
 
+    // 在 SparkSession 中启用自定义 Parser
     val spark = SparkSession.builder
       .appName("Spark SQL basic example")
       .config("spark.master", "local[2]")

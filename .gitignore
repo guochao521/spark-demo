@@ -4,6 +4,7 @@ logs
 target/
 tmp/
 person/
+spark-warehouse/
 
 ### IntelliJ IDEA ###
 .idea/**

@@ -12,14 +12,14 @@
       <option name="url" value="http://10.0.1.125:8081/repository/maven-public/" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="central" />
-      <option name="name" value="Central Repository" />
+      <option name="id" value="nexus-good" />
+      <option name="name" value="nexus-good" />
       <option name="url" value="http://10.0.3.59:8081/repository/maven-public/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="nexus-good" />
       <option name="name" value="nexus-good" />
-      <option name="url" value="http://10.0.3.59:8081/repository/maven-public/" />
+      <option name="url" value="https://maven.aliyun.com/repository/public" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="nexus-good" />
@@ -30,6 +30,26 @@
       <option name="id" value="central" />
       <option name="name" value="Maven Central repository" />
       <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://maven.aliyun.com/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="nexus" />
+      <option name="name" value="nexus" />
+      <option name="url" value="https://maven.aliyun.com/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="nexus-good" />
+      <option name="name" value="nexus-good" />
+      <option name="url" value="http://10.0.1.125:8081/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://10.0.3.59:8081/repository/maven-public/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="jboss.community" />
@@ -50,11 +70,6 @@
       <option name="id" value="nexus" />
       <option name="name" value="nexus" />
       <option name="url" value="https://maven.aliyun.com/repository/central" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="nexus-good" />
-      <option name="name" value="nexus-good" />
-      <option name="url" value="http://10.0.1.125:8081/repository/maven-public/" />
     </remote-repository>
   </component>
 </project>

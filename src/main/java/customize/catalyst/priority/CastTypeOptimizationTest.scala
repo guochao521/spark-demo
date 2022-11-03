@@ -18,8 +18,6 @@ object CastTypeOptimizationTest {
       .config("spark.master", "local[2]")
       .getOrCreate()
 
-    val sc = spark.sparkContext
-
     val df = spark.read.json("./src/main/resources/sql_test.json")
     df.show()
     df.createOrReplaceTempView("sql_test")

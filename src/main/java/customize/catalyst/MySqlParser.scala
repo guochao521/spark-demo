@@ -28,17 +28,14 @@ class MySqlParser(sparkSession: SparkSession, val delegate : org.apache.spark.sq
 
   override def parseTableIdentifier(sqlText: String): TableIdentifier = {
     delegate.parseTableIdentifier(sqlText)
-
   }
 
   override def parseFunctionIdentifier(sqlText: String): FunctionIdentifier = {
     delegate.parseFunctionIdentifier(sqlText)
-
   }
 
   override def parseTableSchema(sqlText: String): StructType = {
     delegate.parseTableSchema(sqlText)
-
   }
 
   override def parseDataType(sqlText: String): DataType = {

@@ -12,22 +12,23 @@ object MultiplyOptimizationRuleTest {
     /**
      * 第一部分：不启用自定义优化规则
      */
-    //    val spark = SparkSession.builder
-//      .appName("Spark SQL basic example")
-//      .config("spark.master", "local[2]")
-//      .getOrCreate()
-//
-//    val df = spark.read
-//      .format("com.databricks.spark.csv")
-//      .option("header", "true")
-//      .option("delimiter", ";")
-//      .load("./src/main/resources/people.csv")
-//
-//    df.toDF().write.saveAsTable("person_sql")
-//
-//    // scalastyle: off
-//    println(spark.sql("select age * 1 from person_sql").queryExecution.optimizedPlan.numberedTreeString)
-//
+
+    val spark1 = SparkSession.builder
+      .appName("Spark SQL basic example")
+      .config("spark.master", "local[2]")
+      .getOrCreate()
+
+    val df1 = spark1.read
+      .format("com.databricks.spark.csv")
+      .option("header", "true")
+      .option("delimiter", ";")
+      .load("./src/main/resources/people.csv")
+
+    df1.toDF().write.saveAsTable("person_sql")
+
+    // scalastyle: off
+    println(spark1.sql("select age * 1 from person_sql").queryExecution.optimizedPlan.numberedTreeString)
+
 //    /**
 //     * 执行结果
 //     * // 00 Project [(cast(age#32 as double) * 1.0) AS (age * 1)#34]

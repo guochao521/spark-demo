@@ -11,6 +11,8 @@ object SparkRDDAction {
       //1:初始化SparkContext
       val conf = new SparkConf().setAppName("SparkRDDTRF").setMaster("local")
       val sc = new SparkContext(conf)
+
+      sc.setLogLevel("WARN")
 //      conf.set("spark.scheduler.mode", "FAIR")
 //      sc.setLocalProperty("spark.scheduler.pool", "testPoll")
 

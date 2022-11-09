@@ -18,12 +18,13 @@ object DataSet {
       .config("truncate","false")
       .getOrCreate()
 
+    spark.sparkContext.setLogLevel("WARN")
 
     // Encoders for most common types are automatically provided by importing spark.implicits._
    //基本类型，自动提供序列化
     import spark.implicits._
     val primitiveDS = Seq(1, 2, 3).toDS()
-    println(primitiveDS.map(_ + 1).collect()) // Returns: Array(2, 3, 4)
+    println(primitiveDS.map(_ + 1).collect().mkString("Array(", ", ", ")")) // Returns: Array(2, 3, 4)
 
     // Encoders are created for case classes
     val caseClassDS =  Seq(Person("alex", 32)).toDS()
@@ -46,6 +47,7 @@ object DataSet {
     ds_json.show()
     //*************************************模式推*********************************************
     ds_json.createOrReplaceTempView("people")
+
     // SQL statements can be run by using the sql methods provided by Spark
     val filterDF = spark.sql("SELECT name, age FROM people WHERE age>20")
     filterDF.printSchema()

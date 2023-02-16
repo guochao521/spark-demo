@@ -2,6 +2,7 @@ package customize.operator
 
 import org.apache.spark.{SparkConf, SparkContext}
 
+// 算子总结：https://developer.aliyun.com/article/653927
 object cogroup {
   def main(args: Array[String]): Unit = {
     val sparkConf = new SparkConf().setMaster("local").setAppName("cogroup demo")

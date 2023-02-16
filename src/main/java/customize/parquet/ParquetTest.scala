@@ -34,6 +34,6 @@ object ParquetTest {
     df.show()
 
     // 使用 DataFrameWriter 类的 parquet() 函数，将 Spark DataFrame 写入 Parquet 文件
-    df.write.parquet("./output/people.parquet")
+//    df.write.parquet("./output/people.parquet")
   }
 }

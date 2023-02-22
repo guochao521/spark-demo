@@ -64,4 +64,8 @@ object HigherFunctionApply {
 //
 //  // Dataset中的函数调用
 //  partFunc("体育-篮球-NBA-湖人")
+  /**
+   * 总结：使用高阶函数封装调用逻辑，充分利用 Spark 调度系统的工作原理，数据不动代码动
+   * 链接：https://time.geekbang.org/column/article/355028
+   */
 }

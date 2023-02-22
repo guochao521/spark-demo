@@ -20,3 +20,6 @@
 ### 包名 wulei
 
 学习 Spark 调优专栏的一些优化案例整理
+
+### 优化案例
+1、Bucket Join：https://mp.weixin.qq.com/s/su0sMWG_CBv3hpAIXmmo6Q

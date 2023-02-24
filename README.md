@@ -21,5 +21,5 @@
 学习 Spark 调优专栏的一些优化案例整理
 
 ### 优化案例
-1、字节跳动在Spark SQL上的核心优化实践（Bucket Join）：https://mp.weixin.qq.com/s/su0sMWG_CBv3hpAIXmmo6Q  
-2、利用Delta Lake使Spark SQL支持跨表CRUD操作：https://mp.weixin.qq.com/s/L64xhtKztwWhlBQrreiDfQ
+1、[字节跳动在 Spark SQL 上的核心优化实践（Bucket Join）](https://mp.weixin.qq.com/s/su0sMWG_CBv3hpAIXmmo6Q)  
+2、[利用 Delta Lake 使 Spark SQL 支持跨表 CRUD 操作](https://mp.weixin.qq.com/s/L64xhtKztwWhlBQrreiDfQ)

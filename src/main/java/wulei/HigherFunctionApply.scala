@@ -60,6 +60,16 @@ object HigherFunctionApply {
       (interest) => searchMap.getOrElse(interest, -1)
   }
 
+  /** 代码说明：
+   * val findIndex: (String) => (String) => Int =
+      在这段代码里面，“(String) => (String) => Int”是findIndex这个变量的类型，它的含义是：
+      1）首先这个类型，指的是一个函数
+      2）函数的输入参数，是一个String的变量，也就是第一个(String)
+      3）而函数的输出，是另外一个函数，也就是“(String) => Int”，这个就好理解一些，这个函数输入参数是String的变量，输出是Int的变量
+
+      所以说，findIndex是一个高阶函数，他的输入是String，而输出是一个函数。
+   */
+
 //  val partFunc = findIndex(filePath)
 //
 //  // Dataset中的函数调用

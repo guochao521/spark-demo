@@ -103,7 +103,7 @@ object CDNLogAnalysis extends java.io.Serializable {
     }
   }
 
-  def getTimeAndSize(line: String) = {
+  def getTimeAndSize(line: String): (String, Long) = {
     var res = ("", 0L)
 
     try {
